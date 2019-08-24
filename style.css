@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #ccc;
+}
+
+main, header {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.meower-form, .loading{
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.loading {
+  text-align: center;
+}
