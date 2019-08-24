@@ -30,7 +30,13 @@ form.addEventListener('submit', (event) => {
     headers: {
       'content-type': 'application/json'
     }
-  });
+  }).then(response => response.json())
+    .then(mew => {
+      console.log(mew);
+      form.reset();
+      form.style.display = '';
+      loading.style.display = 'none';
+    });
 
   console.log('SUBMITTED!!');
 });
