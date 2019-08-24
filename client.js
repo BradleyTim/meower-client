@@ -1,7 +1,7 @@
 
 const form = document.querySelector('form');
 const loading = document.querySelector('.loading');
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/meowers' || 'https://meower-api.herokuapp.com/meowers';
+const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/meowers' : 'https://meower-api.herokuapp.com/meowers';
 
 loading.style.display = '';
 
