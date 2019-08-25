@@ -2,20 +2,27 @@
   --primary-color: #ccc;
 }
 
-main, header {
-  max-width: 80%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, main {
+  max-width: 90%;
   margin: 0 auto;
 }
 
-.title {
-  text-align: center;
+header {
+  padding-top: 1rem;
 }
 
-.meower-form, 
-.loading, 
-.meowers-container {
-  max-width: 60%;
-  margin: 0 auto;
+header .title {
+  padding-bottom: 0;
+}
+
+button {
+  width: 100%;
 }
 
 .loading {
@@ -27,9 +34,22 @@ main, header {
   text-transform: capitalize;
 }
 
-.meower-div {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 1rem .5rem;
-  margin-bottom: 1rem; 
+.meowers-container div {
+  border-top: .5px solid #eee;
+  padding: 1rem 0;
+  margin-bottom: .2rem;
+}
+
+.meowers-container h5 {
+  font-weight: 700;
+  display: inline;
+}
+
+.meowers-container h5::after {
+  content: '.'
+}
+
+.meowers-container p {
+  font-size: 1.65rem;
+  margin-bottom: .5rem;
 }
